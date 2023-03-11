@@ -51,3 +51,4 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5E45CF6217CE45D9834EA280166D08FB }}
           package: '*.war'
+          customDeployFolder: 'ROOT'
