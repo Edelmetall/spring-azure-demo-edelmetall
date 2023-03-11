@@ -1,5 +1,6 @@
 package ch.parkship.springazuredemoedelmetall;
 
+import com.microsoft.applicationinsights.attach.ApplicationInsights;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -15,6 +16,7 @@ public class SpringAzureDemoEdelmetallApplication extends SpringBootServletIniti
     }
 
     public static void main(String[] args) {
+        ApplicationInsights.attach();
         SpringApplication.run(SpringAzureDemoEdelmetallApplication.class, args);
     }
 
